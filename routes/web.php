@@ -82,6 +82,18 @@ Route::prefix('/superAdmin')->group(function (){
     
     // persetujuan
     Route::get('/agreement', [PersetujuanController::class, 'index']);
-
+    Route::get('/agreement/detail', [PersetujuanController::class, 'index']);
+    Route::get('/agreement/rejected', [PersetujuanController::class, 'rejected']);
+    
+    // pengajuan
+    Route::get('/submissions', [PengajuanController::class, 'index']);
+    Route::get('/submissions/detail', [PengajuanController::class, 'detail']);
+    
     // disetujui
+    Route::get('/approved', [DisetujuiController::class, 'index']);
+    Route::get('/approved/download', [DisetujuiController::class, 'download']);
+    Route::get('/approved/delete', [DisetujuiController::class, 'delete']);
+    
+    // ditolak
+    Route::get('/rejected', [DitolakController::class, 'index']);
 });
