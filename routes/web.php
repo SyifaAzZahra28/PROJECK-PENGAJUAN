@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PersetujuanController;
 use App\Http\Controllers\PengajuanController;
 use App\Http\Controllers\DisetujuiController;
 use App\Http\Controllers\DitolakController;
@@ -20,21 +21,67 @@ use App\Http\Controllers\UsersController;
 */
 
 Route::get('/login', [AuthController::class, 'login']);
+Route::get('/logout', [AuthController::class, 'logout']);
 
-Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::prefix('/user')->group(function (){
 
-Route::prefix('/pengajuan')->group(function (){
-    // pengajuan file
-    Route::get('/', [PengajuanController::class, 'index']);
-    Route::get('/tambah', [PengajuanController::class, 'tambah']);
-    Route::get('/edit', [PengajuanController::class, 'edit']);
+    // dashboard
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+    
+    // pengajuan
+    Route::get('/submissions', [PengajuanController::class, 'index']);
+    Route::get('/submissions/create', [PengajuanController::class, 'create']);
+    Route::get('/submissions/edit', [PengajuanController::class, 'edit']);
+    Route::get('/submissions/delete', [PengajuanController::class, 'delete']);
+    
+    // disetujui
+    Route::get('/approved', [DisetujuiController::class, 'index']);
+    Route::get('/approved/delete', [DisetujuiController::class, 'delete']);
+    
+    // ditolak
+    Route::get('/rejected', [DitolakController::class, 'index']);
+    Route::get('/rejected/detail', [DitolakController::class, 'detail']);
+});
+// Route::get('/admin/dashboard', [DashboardController::class, 'index']);
+// Route::get('/superadmin/dashboard', [DashboardController::class, 'index']);
 
-    // file disetujui
-    Route::get('/disetujui', [DisetujuiController::class, 'index']);
+Route::prefix('/admin')->group(function (){
+    
+    // dashboard
+    Route::get('/dashboard', [DashboardController::class, 'index']);
 
-    // file ditolak
-    Route::get('/ditolak', [DitolakController::class, 'index']);
-    Route::get('/ditolak/detail', [DitolakController::class, 'detail']);
+    // persetujuan
+    Route::get('/agreement', [PersetujuanController::class, 'index']);
+    Route::get('/agreement/detail', [PersetujuanController::class, 'detail']);
+    Route::get('/agreement/rejected', [PersetujuanController::class, 'rejected']);
+    
+    
+    // pengajuan
+    Route::get('/submissions', [PengajuanController::class, 'index']);
+    Route::get('/submissions/detail', [PengajuanController::class, 'detail']);
+    
+    // disetujui
+    Route::get('/approved', [DisetujuiController::class, 'index']);
+    Route::get('/approved/download', [DisetujuiController::class, 'download']);
+    Route::get('/approved/delete', [DisetujuiController::class, 'delete']);
+    
+    // ditolak
+    Route::get('/rejected', [DitolakController::class, 'index']);
+    
+    // user
+    Route::get('/user', [UsersController::class, 'index']);
+    Route::get('/user/create', [UsersController::class, 'create']);
+    Route::get('/user/edit', [UsersController::class, 'edit']);
+    Route::get('/user/delete', [UsersController::class, 'delete']);
 });
 
-Route::get('tambahPengguna', [UsersController::class, 'tambah']);
+Route::prefix('/superAdmin')->group(function (){
+    
+    // dashboard
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+    
+    // persetujuan
+    Route::get('/agreement', [PersetujuanController::class, 'index']);
+
+    // disetujui
+});

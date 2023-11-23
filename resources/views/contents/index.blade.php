@@ -12,7 +12,7 @@
                                             <div class="col-md-6 col-xl-3">
                                                 <div class="card widget-card-1">
                                                     <div class="card-block-small">
-                                                        <a href="/pengajuan"><i class="icofont icofont-list bg-c-blue card1-icon"></i></a>
+                                                        <a href="/user/submissions"><i class="icofont icofont-list bg-c-blue card1-icon"></i></a>
                                                         <span class="text-c-blue f-w-600">Dalam antrian</span>
                                                         <h4>49/50GB</h4>
                                                         <div>
@@ -58,7 +58,7 @@
                                             <div class="col-md-6 col-xl-3">
                                                 <div class="card widget-card-1">
                                                     <div class="card-block-small">
-                                                        <a href="/tambahPengguna"><i class="icofont icofont-plus bg-c-yellow card1-icon"></i></a>
+                                                        <a href="/admin/user"><i class="icofont icofont-plus bg-c-yellow card1-icon"></i></a>
                                                         <span class="text-c-green f-w-600">Kelola pengguna</span>
                                                         <h4>45</h4>
                                                         <div>

@@ -89,7 +89,7 @@
                                 </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-12">
-                                        <a href="/dashboard"><button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Login</button></a>
+                                        <a href="/user/dashboard"><button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Login</button></a>
                                     </div>
                                 </div>
                                 <hr/>

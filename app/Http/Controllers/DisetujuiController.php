@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class DisetujuiController extends Controller
 {
     public function index(){
-        return view('contents.disetujui.index');
+        return view('contents.approved.index');
     }
 }

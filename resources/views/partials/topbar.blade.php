@@ -30,7 +30,7 @@
                                 </a>
                                 <ul class="show-notification profile-notification">
                                     <li>
-                                        <a href="auth-normal-sign-in.html">
+                                        <a href="/login">
                                             <i class="ti-layout-sidebar-left"></i> Logout
                                         </a>
                                     </li>

@@ -25,15 +25,15 @@
                         </thead>
                         <tbody>
                             <tr>
-                            <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td><a href=""><button class="btn btn-warning btn-outline-warning"><i class="icofont icofont-download"></i></button></a> <a href=""><button class="btn btn-danger btn-outline-danger"><i class="icofont icofont-trash"></i></button></a></td>
+                            <th class="text-center" scope="row">1</th>
+                                <td class="text-center">Mark</td>
+                                <td class="text-center">Otto</td>
+                                <td class="text-center">@mdo</td>
+                                <td class="text-center">@mdo</td>
+                                <td class="text-center">@mdo</td>
+                                <td class="text-center">@mdo</td>
+                                <td class="text-center">@mdo</td>
+                                <td class="text-center"><a href="/user/approved/download"><button class="btn btn-warning btn-outline-warning"><i class="icofont icofont-download"></i></button></a> <a href="/user/approved/delete"><button class="btn btn-danger btn-outline-danger"><i class="icofont icofont-trash"></i></button></a></td>
                             </tr>
                         </tbody>
                     </table>

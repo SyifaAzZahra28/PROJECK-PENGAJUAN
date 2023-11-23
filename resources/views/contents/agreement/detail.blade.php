@@ -12,9 +12,9 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="card-block">
-                                                            <h4 class="sub-title">Tambah Pengajuan</h4>
+                                                            <h4 class="sub-title">Detail</h4>
                                                             <div>
-                                                                <a href="/pengajuan"><button class="btn btn-primary btn-outline-primary btn-round">Batal</button></a>
+                                                                <a href="/admin/submissions"><button class="btn btn-primary btn-outline-primary btn-round">Batal</button></a>
                                                             </div>
                                                             <br>
                                                             <form>
@@ -59,15 +59,27 @@
                                                                         <input type="text" class="form-control form-control-round text-center" placeholder="status Pengajuan">
                                                                     </div>
                                                                 </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-sm-2 col-form-label">Tanggal disetujui / ditolak</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="date" class="form-control form-control-round text-center" placeholder="Tanggal Pengajuan">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-sm-2 col-form-label">Alasan ditolak</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="textarea" class="form-control form-control-round text-center" placeholder="Alasan ditolak">
+                                                                    </div>
+                                                                </div>
                                                             </form>
 
                                                             <!-- kalo udah dikasi back-end, masukin div dibawah ini kedalam form -->
                                                             <div class="form-group row">
                                                                 <div class="col-sm-10">
-                                                                    <a href="/pengajuan"><button class="btn btn-primary btn-outline-primary btn-round">Simpan</button></a>
+                                                                    <a href="/admin/agreement"><button class="btn btn-success btn-outline-success btn-round">Disetujui</button></a> 
+                                                                    <a href="/admin/agreement/rejected"><button class="btn btn-danger btn-outline-danger btn-round">Ditolak</button></a>
                                                                 </div>
                                                             </div>
-                                                                        <!-- Page body end -->
     </div>
 </div>
 @endsection
