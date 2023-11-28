@@ -33,7 +33,9 @@
                                 <td class="text-center">@mdo</td>
                                 <td class="text-center">@mdo</td>
                                 <td class="text-center">@mdo</td>
-                                <td class="text-center"><a href="/user/approved/download"><button class="btn btn-warning btn-outline-warning"><i class="icofont icofont-download"></i></button></a> <a href="/user/approved/delete"><button class="btn btn-danger btn-outline-danger"><i class="icofont icofont-trash"></i></button></a></td>
+                                <td class="text-center">
+                                    <a href="/user/approved/download"><button class="btn btn-warning btn-outline-warning"><i class="icofont icofont-download"></i></button></a> <a href="/user/approved/delete"><button class="btn btn-danger btn-outline-danger"><i class="icofont icofont-trash"></i></button></a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
