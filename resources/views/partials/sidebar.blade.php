@@ -10,12 +10,6 @@
                                     </a>
                                 </li>
                                 <li class="pcoded-left-item">
-                                    <a href="/admin/agreement">
-                                        <span class="pcoded-micon"><i class="ti-reload"></i></span>
-                                        <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Persetujuan</span>
-                                    </a>
-                                </li>
-                                <li class="pcoded-left-item">
                                     <a href="/user/submissions">
                                         <span class="pcoded-micon"><i class="ti-layers-alt"></i></span>
                                         <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Pengajuan</span>

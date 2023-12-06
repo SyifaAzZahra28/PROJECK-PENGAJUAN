@@ -47,15 +47,6 @@ Route::prefix('/user')->group(function (){
 
 Route::prefix('/admin')->group(function (){
     
-    // dashboard
-    Route::get('/dashboard', [DashboardController::class, 'index']);
-
-    // persetujuan
-    Route::get('/agreement', [PersetujuanController::class, 'index']);
-    Route::get('/agreement/detail', [PersetujuanController::class, 'detail']);
-    Route::get('/agreement/rejected', [PersetujuanController::class, 'rejected']);
-    
-    
     // pengajuan
     Route::get('/submissions', [PengajuanController::class, 'index']);
     Route::get('/submissions/detail', [PengajuanController::class, 'detail']);
